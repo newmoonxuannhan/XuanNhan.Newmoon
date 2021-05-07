@@ -1,0 +1,6 @@
+2021-05-05T01:46:34+00:00 CRITICAL require_once(): Failed opening required '/var/www/newmoon.local//wp-content/plugins/plugin-update-checker/plugin-update-checker.php' (include_path='.:/usr/share/php') in /var/www/newmoon.local/wp-content/plugins/mmolazi-plugin/mmolazi-plugin.php on line 113
+
+2021-05-05T01:46:34+00:00 CRITICAL require_once(): Failed opening required '/var/www/newmoon.local//wp-content/plugins/plugin-update-checker/plugin-update-checker.php' (include_path='.:/usr/share/php') in /var/www/newmoon.local/wp-content/plugins/mmolazi-plugin/mmolazi-plugin.php on line 113
+
+2021-05-05T01:46:34+00:00 CRITICAL require_once(): Failed opening required '/var/www/newmoon.local//wp-content/plugins/plugin-update-checker/plugin-update-checker.php' (include_path='.:/usr/share/php') in /var/www/newmoon.local/wp-content/plugins/mmolazi-plugin/mmolazi-plugin.php on line 113
+
