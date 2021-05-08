@@ -9,7 +9,7 @@ function my_custom_script_load(){
 
 
 
-
+// ------------------------------- // 
 function nhan_sticky_add_to_cart_before() {
     if ( ! is_product() || ! get_theme_mod( 'product_sticky_cart', 0 ) ) {
 		return;
@@ -23,7 +23,7 @@ add_filter('woocommerce_before_add_to_cart_button','nhan_sticky_add_to_cart_befo
 
 // move Price single product
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price' );
-// add_action('woocommerce_before_add_to_cart_button','woocommerce_template_single_price',50);
+
 
 //add words " Quantity
 function nhan_add_quantity(){
@@ -45,5 +45,4 @@ function nhan_add_price(){
     return;
 }
 add_filter('woocommerce_before_add_to_cart_form','nhan_add_price',1);
-// add_action('woocommerce_before_add_to_cart_form','woocommerce_template_single_price',10);
 

@@ -1,4 +1,9 @@
 .product-small .box-image 
 {    border-radius: 15px;
+ 
+}
 
+.amount{
+    color: orange !important;
+    /* font-size: 20px; */
 }
