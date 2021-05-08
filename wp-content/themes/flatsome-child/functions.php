@@ -1,6 +1,6 @@
 <?php
 // Add custom Theme Functions here
-
+// load 
 add_action( 'wp_enqueue_scripts', 'my_custom_script_load' );
 function my_custom_script_load(){
     wp_enqueue_style( 'my-custom-theme', get_stylesheet_directory_uri() . '/assets/css/famiprints.css', array(), '3.7', 'all' );
@@ -40,7 +40,7 @@ function nhan_add_price(){
     global $product;
     ?>
     <a style="font-size: 20px;"><?php echo 'Price:';?></a>
-    <a style="font-size: 30px;"><?php echo $product->get_price_html();?></a>
+    <a style="font-size: 30px ;"><?php echo $product->get_price_html();?></a>
     <?php
     return;
 }
