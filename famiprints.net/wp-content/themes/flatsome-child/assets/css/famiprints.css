@@ -5,5 +5,8 @@
 
 .amount{
     color: orange !important;
-    /* font-size: 20px; */
+}
+
+.product-small .box-text {
+    font-size: 20px !important;
 }

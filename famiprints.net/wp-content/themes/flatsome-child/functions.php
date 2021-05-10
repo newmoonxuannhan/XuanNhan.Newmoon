@@ -24,25 +24,27 @@ add_filter('woocommerce_before_add_to_cart_button','nhan_sticky_add_to_cart_befo
 // move Price single product
 remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_price' );
 
+// add words "Price" 
+function nhan_add_price(){
+    global $product;
+    ?>
+    <a style="font-size: 20px; color: black;"><?php echo 'Price:';?></a>
+    <a style="font-size: 30px;"><?php echo $product->get_price_html();?></a>
+    <?php
+    return;
+}
+add_filter('woocommerce_before_add_to_cart_form','nhan_add_price',1);
+
 
 //add words " Quantity
 function nhan_add_quantity(){
     ?>
-    <a style="font-size: 20px;"><?php echo 'Quantity:';?></a>
+    <a style="font-size: 20px; color: black;"><?php echo 'Quantity:';?></a>
     <?php
     return ;
 }
 add_filter('woocommerce_before_add_to_cart_quantity','nhan_add_quantity');
 
 
-// add words "Price" 
-function nhan_add_price(){
-    global $product;
-    ?>
-    <a style="font-size: 20px;"><?php echo 'Price:';?></a>
-    <a style="font-size: 30px;"><?php echo $product->get_price_html();?></a>
-    <?php
-    return;
-}
-add_filter('woocommerce_before_add_to_cart_form','nhan_add_price',1);
+
 
